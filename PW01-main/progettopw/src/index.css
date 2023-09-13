@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&family=Roboto:ital,wght@1,100&display=swap");
+@font-face {
+  /*font-family: "Space Grotesk";*/
+  font-family: "Nunito", sans-serif;
+  src: url("./SpaceGrotesk-VariableFont_wght.ttf") format("woff2");
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #fffbf5;
+  margin: 0;
+}
+
+/*--------------------*/
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1%;
+  background-color: #fffbf5;
+}
+
+.logonav {
+  max-width: 50%;
+}
+
+.right-section {
+  display: flex;
+}
+
+.right-section button {
+  margin-left: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+}
+
+.right-section button:first-child {
+  background-color: #e7dbc5;
+}
+
+.right-section button:last-child {
+  background-color: #f77878;
+}
+
+/*--------------------*/
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-image: url("./components/img/museum.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form-box {
+  background-color: #e7dbc5;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+.form-row {
+  display: flex;
+  align-items: flex-end; /* Allineamento del bottone in basso */
+  margin-bottom: 2%;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  width: 100%;
+}
+
+.form-label {
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+.input-field {
+  padding: 10%;
+  margin-top: 5px;
+}
+
+.submit-button {
+  background-color: #f77878;
+  color: #fff;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+/*---------footer-----------*/
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #fffbf5;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.footer-column {
+  flex: 1;
+  max-width: 350px;
+}
+
+.footer-logo {
+  width: 50%;
+  height: 55%;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+  font-size: 12px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+ul {
+  list-style-type: none; /* Rimuove i punti dall'elenco */
+  padding-left: 0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.text-left {
+  text-align: left; 
+}
+
+li {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.social-icon {
+  font-size: 1.5em; 
+  color: #555; 
+  margin-right: 10px; 
+}
+
+/*--------------------*/
+
+.login-container,
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.container {
+  font-family: "Nunito", sans-serif;
+  size: 40px;
+}
+
+form {
+  width: 20%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(239, 219, 181, 0.46);
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  width: 50%;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f77878;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+#button-search {
+  display: flex;
+}
+.padding {
+  padding: 4px;
+}
+
+button:hover {
+  background-color: #f77890;
+}
+
+/*--------------------*/
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.label-group {
+  display: flex;
+  gap: 10px;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*--------Pagina museo carosello e commenti------------*/
+
+.carosello-container {
+  position: relative;
+  padding: 3%;
+  background-color: rgba(239, 219, 181, 0.46);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-image {
+  max-height: 100%;
+  margin: 0 10px;
+  border-radius: 5%;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.foreground {
+  transform: scale(1); 
+}
+
+.background-left,
+.background-right {
+  transform: scale(0.6);
+}
+
+.previous-button,
+.next-button {
+  font-size: 24px;
+  border: none;
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.previous-button {
+  margin-right: 10%;
+}
+
+.next-button {
+  margin-left: 10%;
+}
+
+/*mostre*/
+.content-containerM {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.divPoderoso{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto; 
+}
+
+.divPoderoso p {
+  font-size: 14px;
+}
+
+.divPoderoso h3 {
+  font-size: 20px;
+}
+
+.divPoderoso button {
+  width: 10%;
+}
+
+.containerImmagini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8eedd;
+  height: 400px;
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-container img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/*--------griglia filter/risultati------------*/
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div3 {
+  display: flex;
+  justify-content: center;
+}
+
+.museumdiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 800px; 
+}
+
+
+.buttdett {
+  margin-top: auto; 
+
+}
+
+.tagricercamuseo {
+  max-width: 300px; 
+  padding: 10px;
+  background-color: #e7dbc5;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/*filter*/
+
+.containerFiltro {
+  background-color: #e7dbc5; 
+  padding: 10px;
+  margin: 0; 
+  border-radius: 15px; 
+  margin-top: 30px;
+
+}
+
+.containerFiltro h3 {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.containerFiltro p {
+  font-size: 1.1em;
+  display: inline-block;
+}
+
+.containerFiltro select {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.custom-select {
+  width: 40%;
+  height: 40%;
+  padding: 2%;
+  font-size: 90%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  margin-left: 10px;
+}
+
+.custom-select:hover {
+  border-color: #999;
+}
+
+.custom-select:focus {
+  border-color: #555;
+}
+
+.custom-select select {
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+.custom-select option {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.custom-select option:hover {
+  background-color: #999;
+}
+
+/*-----suggest-------*/
+
+.container {
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  width: 19%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+  margin: 1%;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-section img {
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+.bottom-section {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  background-color: #e7dbc5;
+  
+}
+
+
+/*pagina artista*/
+
+.
+/*pagina mostra*/
+
+.container-mostra img {
+
+  margin-bottom: 10px;
+}
+.container-mostra {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.text-mostra {
+
+  margin-left: auto;
+}
+@media screen and (max-width: 600px) {
+  .text-mostra {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .container-mostra img {
+    margin-left: 0;
+  }
+}
+
+/*PAGINA UTENTE*/
+.mini-divciao {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.info-containerBello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 300px;
+}
+
+.info-containerBello p {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.left-columnU {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-columnU {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -60px;
+}
+
+.centered-imageU {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-containerU {
+  background-color: #EFDBB5;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-containerU1 {
+  background-color: #EFDBB5;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardU {
+  width: 30%;
+  height: 60%;
+  background: rgb(255, 255, 255);
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #FFF0D3;
+
+}
+
+.cardU1 {
+  width: 30%;
+  height: 60%;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #FFF0D3;
+  text-align: center;
+}
+
+.cardU h1 {
+  text-align: center;
+  font-size: 13.5px;
+  color: black;
+  text-decoration: underline;
+}
+.cardU p {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.cardU img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+.cardU1 h1 {
+  text-align: center;
+  font-size: 13.5px;
+  color: black;
+  text-decoration: underline;
+}
+.cardU1 p {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.cardU1 img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Stile del contenitore scrollable */
+.scrollable-container {
+  
+  width: 500px;
+  height: 200px; 
+  overflow: auto; 
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 10px 0px 0 10px;
+}
+
+.scrollable-container p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.info-containerBelloU2{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 300px;
+  margin-top: 20px;
+}
+.right-columnU2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: -60px;
+}
+
+.rectangleU1 {
+  height: 200px;
+  width: 200px; 
+  background-color: #EFDBB5;
+  padding: 10px;
+  border: 1px solid #000000;
+  overflow-wrap: break-word; 
+  border-radius: 0px 10px 10px 0;
+  
+}
+
+.right-sectionU2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+/*recensioni*/
+
